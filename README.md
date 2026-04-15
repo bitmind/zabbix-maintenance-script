@@ -24,6 +24,6 @@ Based on https://github.com/Trikke76/Zabbix/tree/master/maintenance
  * Create a Script for maintenance creation
  * Create a Script for maintenance deletion
  
- (see attache screenshots)
+ (see attached screenshots)
  
  
