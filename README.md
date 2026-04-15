@@ -24,6 +24,11 @@ Based on https://github.com/Trikke76/Zabbix/tree/master/maintenance
  * Create a Script for maintenance creation
  * Create a Script for maintenance deletion
  
- (see attache screenshots)
+ (see attached screenshots)
  
- 
+## Security
+
+If Zabbix agent is running on the same host, please be aware that it will be able to read the script content using agent keys. To protect API token consider adding the following options to agent configuration:
+
+	DenyKey=vfs.file.contents[*]
+	DenyKey=vfs.file.regexp[*] 
